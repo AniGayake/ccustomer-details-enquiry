@@ -8,21 +8,21 @@ import java.time.LocalDateTime;
 public class Account {
     @Id
     private String accountNumber;
+    private BigDecimal balance;
+    @Column(name = "customer_id")
+    private Long customerId;
     @Column(name = "interest_rate")
     private Double interestRate;
     @Column(name = "minimum_balance")
     private BigDecimal minimumBalance;
     @Column(name = "withdrawal_limit")
     private Integer withdrawalLimit;
-    @Column(name = "customer_id")
-    private Long customerId;
     private String accountTypeCode;
     private String branchCode;
     private String ifscCode;
-    private BigDecimal balance;
     private String currency;
-    private LocalDateTime createdAt;
     private String statusCode;
+    private LocalDateTime createdAt;
 
     public String getAccountNumber() {
         return accountNumber;
