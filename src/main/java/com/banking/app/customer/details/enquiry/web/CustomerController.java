@@ -1,10 +1,8 @@
 package com.banking.app.customer.details.enquiry.web;
 
 import com.banking.app.customer.details.enquiry.bo.Customer;
-import com.banking.app.customer.details.enquiry.bo.CustomerAccountsRelationship;
 import com.banking.app.customer.details.enquiry.bo.CustomerDemographicDetails;
 import com.banking.app.customer.details.enquiry.service.CustomerService;
-import com.banking.app.customer.details.enquiry.util.DopplerSecretsProcessor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
