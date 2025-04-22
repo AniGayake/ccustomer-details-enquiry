@@ -119,4 +119,22 @@ public class Account {
     public void setStatusCode(String statusCode) {
         this.statusCode = statusCode;
     }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "accountNumber='" + accountNumber + '\'' +
+                ", balance=" + balance +
+                ", customerId=" + customerId +
+                ", interestRate=" + interestRate +
+                ", minimumBalance=" + minimumBalance +
+                ", withdrawalLimit=" + withdrawalLimit +
+                ", accountTypeCode='" + accountTypeCode + '\'' +
+                ", branchCode='" + branchCode + '\'' +
+                ", ifscCode='" + ifscCode + '\'' +
+                ", currency='" + currency + '\'' +
+                ", statusCode='" + statusCode + '\'' +
+                ", createdAt=" + createdAt +
+                '}';
+    }
 }
